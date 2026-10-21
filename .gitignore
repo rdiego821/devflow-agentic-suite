@@ -1,0 +1,31 @@
+# Java / Maven
+target/
+*.class
+*.jar
+*.war
+.mvn/
+.classpath
+.project
+.settings/
+
+# Python / MCP
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+.pytest_cache/
+
+# Node / React
+node_modules/
+dist/
+.vite/
+*.log
+
+# IDE & OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
