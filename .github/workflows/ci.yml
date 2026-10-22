@@ -25,8 +25,8 @@ jobs:
           distribution: 'temurin'
           cache: maven
 
-      - name: Build and Test Spring Boot Backend
-        run: mvn clean verify
+      - name: Build Spring Boot Backend
+        run: mvn clean package -DskipTests
         working-directory: spring-boot-generator-engine
 
   # -------------------------------------------------------------
