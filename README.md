@@ -41,6 +41,30 @@ git clone [git@github.com:rdiego821/bid-agent-platform.git](git@github.com:rdieg
 cd devflow-agentic-suite
 ```
 
+### 🐳 Running with Docker Compose (Recommended)
+
+If you prefer to run the entire suite without installing local dependencies (like Node.js or Maven), you can spin up the containerized stack using Docker:
+
+1. Ensure [Docker Desktop](https://www.docker.com/) is running on your machine.
+2. From the root directory of the monorepo, execute:
+
+```bash
+docker compose up --build
+```
+
+Open your browser and access:
+
+Frontend Dashboard: http://localhost:3000
+
+Spring Boot Backend: http://localhost:8080
+
+To stop the containers, press Ctrl + C or run:
+
+```bash
+docker compose down
+```
+### 🐳 Running without Docker
+
 2. Start the Spring Boot Backend
 
 ```bash
