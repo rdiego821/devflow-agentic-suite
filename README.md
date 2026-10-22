@@ -1,3 +1,5 @@
+![CI Pipeline](https://github.com/rdiego821/devflow-agentic-suite/actions/workflows/ci.yml/badge.svg)
+
 # 🚀 DevFlow Agentic Suite
 
 Modular platform for the agentic automation of the **SDLC** (Software Development Life Cycle), designed to integrate Artificial Intelligence capabilities into backend development workflows in **Java / Spring Boot**, local code analysis via **MCP Server (Python)**, and an interactive dashboard built with **React & TypeScript**.
