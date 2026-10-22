@@ -27,7 +27,7 @@ jobs:
 
       - name: Build and Test Spring Boot Backend
         run: mvn clean verify
-        working-directory: ./backend
+        working-directory: spring-boot-generator-engine
 
   # -------------------------------------------------------------
   # Job 2: Build & Lint Frontend (React / TypeScript / Vite)
