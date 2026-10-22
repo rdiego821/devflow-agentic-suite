@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { CodeGeneratorForm } from './components/CodeGeneratorForm';
 import { CodeViewer } from './components/CodeViewer';
 import { CodeSpecification } from './types';

@@ -1,0 +1,30 @@
+services:
+  # Java Spring Boot Generator Engine
+  backend:
+    build:
+      context: ./spring-boot-generator-engine
+      dockerfile: Dockerfile
+    container_name: devflow-backend
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+    networks:
+      - devflow-network
+
+  # React Frontend Dashboard
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: devflow-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    networks:
+      - devflow-network
+
+networks:
+  devflow-network:
+    driver: bridge
