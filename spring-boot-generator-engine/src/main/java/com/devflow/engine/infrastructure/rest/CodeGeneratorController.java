@@ -3,6 +3,7 @@ package com.devflow.engine.infrastructure.rest;
 import com.devflow.engine.application.CodeGeneratorService;
 import com.devflow.engine.domain.CodeSpecification;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api/engine")
+@CrossOrigin(origins = "*")
 public class CodeGeneratorController {
     private final CodeGeneratorService codeGeneratorService;
 
